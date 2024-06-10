@@ -1,119 +1,124 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
 }
 
+/* Container */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+/* Header */
 header {
     background: #333;
     color: #fff;
-    padding: 1em 0;
-    text-align: center;
+    padding: 20px 0;
 }
 
 header h1 {
+    display: inline-block;
     margin: 0;
-    font-size: 2.5em;
+    padding: 0 20px;
+    vertical-align: middle;
 }
 
-header p {
-    font-size: 1.2em;
+header nav {
+    display: inline-block;
+    float: right;
 }
 
-nav ul {
-    list-style: none;
+header nav ul {
     padding: 0;
+    list-style: none;
+    margin: 0;
 }
 
-nav ul li {
+header nav ul li {
     display: inline;
-    margin: 0 10px;
+    padding: 0 20px;
 }
 
-nav ul li a {
+header nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1em;
+    text-transform: uppercase;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+header nav ul li a:hover {
+    color: #0779e4;
 }
 
-/* Main Section Styles */
-main {
-    padding: 20px;
-    max-width: 900px;
-    margin: 0 auto;
+/* Content */
+.content {
     background: #fff;
+    padding: 20px;
+    margin: 20px 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-main section {
+.content h2 {
+    border-bottom: 2px solid #0779e4;
+    padding-bottom: 10px;
     margin-bottom: 20px;
 }
 
-main section h2 {
-    color: #333;
-    border-bottom: 2px solid #333;
-    padding-bottom: 10px;
+.content p, .content ul {
+    margin-bottom: 20px;
+}
+
+.content ul {
+    padding-left: 20px;
+}
+
+.content ul li {
     margin-bottom: 10px;
 }
 
-main section h3 {
-    color: #555;
+.content ul li ul {
+    margin-top: 10px;
+    padding-left: 20px;
 }
 
-main section ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-main section ul li {
-    margin-bottom: 10px;
-}
-
-/* Footer Styles */
-footer {
-    text-align: center;
-    padding: 1em 0;
-    background: #333;
-    color: #fff;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-footer p {
-    margin: 0;
-}
-
-/* Link Styles */
+/* Links */
 a {
-    color: #0066cc;
+    color: #0779e4;
+    text-decoration: none;
 }
 
 a:hover {
-    color: #004999;
     text-decoration: underline;
 }
 
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
 /* Responsive Design */
-@media (max-width: 600px) {
-    nav ul li {
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    header h1, header nav {
         display: block;
-        margin: 10px 0;
+        text-align: center;
     }
-
-    header h1 {
-        font-size: 2em;
+    header nav ul {
+        text-align: center;
     }
-
-    header p {
-        font-size: 1em;
+    header nav ul li {
+        display: block;
+        padding: 10px 0;
     }
 }

@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jyoti Ranjan Behera - CV</title>
+    <title>Jyoti Ranjan Behera - Researcher</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
@@ -17,46 +17,54 @@
             width: 80%;
             margin: auto;
             overflow: hidden;
-            padding: 20px;
-            background: white;
         }
         header {
             background: #333;
             color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #0779e4 3px solid;
+            padding: 20px 0;
         }
-        header a {
+        header h1, header nav {
+            margin: 0;
+            padding: 0 20px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        header nav ul {
+            padding: 0;
+            list-style: none;
+            float: right;
+        }
+        header nav ul li {
+            display: inline;
+            padding: 0 20px;
+        }
+        header nav ul li a {
             color: #fff;
             text-decoration: none;
             text-transform: uppercase;
-            font-size: 16px;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-        header li {
-            float: right;
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        header .current a {
-            color: #0779e4;
         }
         .content {
+            background: white;
             padding: 20px;
+            margin: 20px 0;
         }
-        h1, h2, h3 {
-            color: #333;
+        .content h2 {
+            border-bottom: 2px solid #0779e4;
+            padding-bottom: 10px;
         }
         footer {
-            padding: 20px;
-            margin-top: 20px;
+            background: #333;
             color: #fff;
-            background-color: #333;
             text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        a {
+            color: #0779e4;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -64,24 +72,26 @@
     <header>
         <div class="container">
             <h1>Jyoti Ranjan Behera</h1>
-            <ul>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#professional-affiliations">Professional Affiliations</a></li>
-                <li><a href="#synergistic-activities">Synergistic Activities</a></li>
-                <li><a href="#teaching-experiences">Teaching Experiences</a></li>
-                <li><a href="#presentations">Presentations</a></li>
-                <li><a href="#grants">Research & Travel Grants</a></li>
-                <li><a href="#patents">Patents</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#awards">Awards</a></li>
-                <li><a href="#experience">Research Experience</a></li>
-                <li><a href="#education">Education</a></li>
-            </ul>
+            <nav>
+                <ul>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#professional-affiliations">Affiliations</a></li>
+                    <li><a href="#synergistic-activities">Activities</a></li>
+                    <li><a href="#teaching-experiences">Teaching</a></li>
+                    <li><a href="#presentations">Presentations</a></li>
+                    <li><a href="#grants">Grants</a></li>
+                    <li><a href="#patents">Patents</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#awards">Awards</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
     <div class="container">
-        <section id="contact">
+        <section id="contact" class="content">
             <h2>Contact</h2>
             <p>
                 Department of Biological Sciences, East Tennessee State University,<br>
@@ -91,13 +101,13 @@
             </p>
         </section>
 
-        <section id="education">
+        <section id="education" class="content">
             <h2>Education</h2>
             <p>Ph.D. in Biomedical Sciences, Department of Biological Sciences, East Tennessee State University, TN, USA (2018-2023)</p>
             <p>Integrated BS-MS: Biological Sciences major, National Institute of Science Education and Research, Bhubaneswar, India (2013-2018)</p>
         </section>
 
-        <section id="experience">
+        <section id="experience" class="content">
             <h2>Research Experience</h2>
             <ul>
                 <li>
@@ -105,9 +115,7 @@
                     Advisor: Dr. Aruna Kilaru<br>
                     Title: Elucidation of the Role of Avocado WRI1 and WRI2 and Their Ability to Affect Oil Content and Composition When Co-expressed With DGAT1 and PDAT1 (2018-2023)
                 </li>
-                <li>
-                    Junior Research Fellow, Bhabha Atomic Research Center, Mumbai, India (2018)
-                </li>
+                <li>Junior Research Fellow, Bhabha Atomic Research Center, Mumbai, India (2018)</li>
                 <li>
                     Master’s Thesis, National Institute of Science Education and Research, Bhubaneswar, India<br>
                     Advisor: Dr. Kishore CS Panigrahi<br>
@@ -130,7 +138,7 @@
             </ul>
         </section>
 
-        <section id="awards">
+        <section id="awards" class="content">
             <h2>Awards & Fellowships</h2>
             <ul>
                 <li>Second place at the Plant Biology 2023 African Researchers network (PB23 ARN) Hackathon on ‘The role of science communication in enhancing innovative technologies in agriculture’ (2023)</li>
@@ -146,7 +154,7 @@
             </ul>
         </section>
 
-        <section id="publications">
+        <section id="publications" class="content">
             <h2>Publications (*First author; #Corresponding author)</h2>
             <ul>
                 <li>Shu Y, Zhao R, Xu N, Dai Y, Behera JR, Kilaru A, and Wang L (2024) Over-expression of the Iris laevigata cold-resistance gene MYB97 improves photosynthetic capacity and photoprotection in tobacco (Nicotiana tabacum), Journal of Forestry Research (Accepted)</li>
@@ -158,35 +166,34 @@
             </ul>
         </section>
 
-        <section id="patents">
+        <section id="patents" class="content">
             <h2>Patents</h2>
             <ul>
                 <li>Behera J. R., Kilaru A., Enhanced triacylglycerol production by expression of avocado WRINKLED1, WRINKLED2, DGAT1 and PDAT1 genes (Pending)</li>
             </ul>
         </section>
 
-        <section id="grants">
+        <section id="grants" class="content">
             <h2>Research & Travel Grants</h2>
             <ul>
-                <li>Behera J (PI), Kilaru A (2024), Research grant on ‘Harnessing Moss Biotechnology for Sustainable Vegetable Oil Production’, ETSU Research Funding Program 2024 ($20,000; pending)</li>
-                <li>Kilaru A (PI), Behera J (Co-PI), Sun T, Shilabin A, Prince R, Mims P (2024), Research grant on ‘Development of Moss Bioreactors for Greener Production of Biofortified Oils’, BioMADE 4.0 ($1,556,184; pending)</li>
-                <li>Behera J (2023) Travel fund support to attend the ‘Plant Biology 2023 Annual Conference’ organized by American Society of Plant Biologists (ASPB), Savannah, GA ($500)</li>
-                <li>Behera J (2023) Travel fund support to attend the ‘Phytochemical Society of North America (PSNA) annual meeting’ at Lansing, MI ($700)</li>
-                <li>Behera J (2023) Elucidation of the Mechanistic Role of Novel Avocado Oil Biosynthesis Regulator Protein WRINKLED2, Student Research Grant Award by Sigma XI Scientific Research Honor Society ($1000)</li>
-                <li>Behera J (2023) Travel fund support to attend the ‘Gordon Research Conference and Seminar’ on Plant Lipids: Metabolism, Structure, and Function at Galveston, TX ($1805)</li>
+                
+                <li>Behera J (2023) Travel fund support to attend the ‘Plant Biology 2023 Annual Conference’ organized by American Society of Plant Biologists (ASPB), Savannah, GA </li>
+                <li>Behera J (2023) Travel fund support to attend the ‘Phytochemical Society of North America (PSNA) annual meeting’ at Lansing, MI </li>
+                <li>Behera J (2023) Elucidation of the Mechanistic Role of Novel Avocado Oil Biosynthesis Regulator Protein WRINKLED2, Student Research Grant Award by Sigma XI Scientific Research Honor Society </li>
+                <li>Behera J (2023) Travel fund support to attend the ‘Gordon Research Conference and Seminar’ on Plant Lipids: Metabolism, Structure, and Function at Galveston, TX </li>
                 <li>Behera J (2022) Travel grant to attend the workshop ‘An Integrated View on Early Land Plant Evolution’ by the European Molecular Biology Organization (EMBO), Bhubaneswar, India (€500)</li>
-                <li>Behera J (2022) Travel fund support by the office of Equity and Inclusion, ETSU to attend the workshop ‘An Integrated View on Early Land Plant Evolution’ by the European Molecular Biology Organization (EMBO), Bhubaneswar, India ($1500)</li>
-                <li>Behera J (2022) Travel fund support by the Graduate program in Biomedical Sciences, ETSU to attend the workshop ‘An Integrated View on Early Land Plant Evolution’ by the European Molecular Biology Organization (EMBO), Bhubaneswar, India ($500)</li>
-                <li>Behera J (2022) Travel grant to attend annual meeting of the Phytochemical Society of North America (PSNA), Blacksburg, VA ($700)</li>
-                <li>Behera J (2022) Travel fund support by the Graduate and Professional Students Association (GPSA), ETSU to attend the ‘Plant Biology Worldwide Summit 2022’ by American Society of Plant Biologists (ASPB), Portland, OR ($300)</li>
-                <li>Behera J (2022) Understanding the novel oil biosynthesis regulation mechanism in avocado mesocarp, ETSU-Graduate Council Research Grant ($1000)</li>
-                <li>Behera J (2020) Understanding the structural domains of oil biosynthesis regulator protein in avocado. ETSU-Graduate Council Research Grant ($800)</li>
-                <li>Behera J (2018-2023) Department travel grant for graduate students, Biology Department, East Tennessee State University ($1800)</li>
-                <li>Behera J (2019) Travel grant to attend 58th annual meeting of the Phytochemical Society of North America, Johnson City, TN ($300)</li>
+                <li>Behera J (2022) Travel fund support by the office of Equity and Inclusion, ETSU to attend the workshop ‘An Integrated View on Early Land Plant Evolution’ by the European Molecular Biology Organization (EMBO), Bhubaneswar, India </li>
+                <li>Behera J (2022) Travel fund support by the Graduate program in Biomedical Sciences, ETSU to attend the workshop ‘An Integrated View on Early Land Plant Evolution’ by the European Molecular Biology Organization (EMBO), Bhubaneswar, India </li>
+                <li>Behera J (2022) Travel grant to attend annual meeting of the Phytochemical Society of North America (PSNA), Blacksburg, VA </li>
+                <li>Behera J (2022) Travel fund support by the Graduate and Professional Students Association (GPSA), ETSU to attend the ‘Plant Biology Worldwide Summit 2022’ by American Society of Plant Biologists (ASPB), Portland, OR </li>
+                <li>Behera J (2022) Understanding the novel oil biosynthesis regulation mechanism in avocado mesocarp, ETSU-Graduate Council Research Grant </li>
+                <li>Behera J (2020) Understanding the structural domains of oil biosynthesis regulator protein in avocado. ETSU-Graduate Council Research Grant </li>
+                <li>Behera J (2018-2023) Department travel grant for graduate students, Biology Department, East Tennessee State University </li>
+                <li>Behera J (2019) Travel grant to attend 58th annual meeting of the Phytochemical Society of North America, Johnson City, TN </li>
             </ul>
         </section>
 
-        <section id="presentations">
+        <section id="presentations" class="content">
             <h2>Presentations and Posters</h2>
             <ul>
                 <li>Behera J and Kilaru A (2023) Avocado WRINKLED2 is functional and positively regulates lipid biosynthesis in nonseed tissues. American Society of Plant Biologists Annual Meeting 2023, Savannah, GA (Oral and Poster)</li>
@@ -218,7 +225,7 @@
             </ul>
         </section>
 
-        <section id="teaching-experiences">
+        <section id="teaching-experiences" class="content">
             <h2>Teaching Experiences</h2>
             <ul>
                 <li>BIOL 5147: Biochemistry Macromolecules Laboratory (ETSU, Fall 2019-20)</li>
@@ -229,7 +236,7 @@
             </ul>
         </section>
 
-        <section id="synergistic-activities">
+        <section id="synergistic-activities" class="content">
             <h2>Synergistic Activities</h2>
             <ul>
                 <li>Committee Member, Synthetic Biology Initiative at ETSU (2023 Aug-current)</li>
@@ -246,7 +253,7 @@
             </ul>
         </section>
 
-        <section id="professional-affiliations">
+        <section id="professional-affiliations" class="content">
             <h2>Professional Affiliations</h2>
             <ul>
                 <li>The American Society for Microbiologists KY/TN Regional Chapter (2022-2023)</li>
@@ -273,7 +280,7 @@
             </ul>
         </section>
 
-        <section id="other-interests">
+        <section id="other-interests" class="content">
             <h2>Other Interests</h2>
             <ul>
                 <li>Photography</li>
